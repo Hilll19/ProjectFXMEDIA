@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boostrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Open+Sans:wght@300;400&family=Poppins:wght@100;300;400;500;600&family=Roboto+Condensed:wght@300&family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-imgdropdown" id="imgdropdown">
+      <button class="imgdropdown-item">
+        <img src="img/logobrand.png" alt="" /> <br />
+        <h1>MENU</h1>
+        <br />
+      </button>
+      <button class="dropdown-icon">
+        <i class="fa-solid fa-circle-chevron-down"></i>
+      </button>
+    </div>
+    <!-- Navbar -->
+    <section class="container-nav">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="logo"
+            ><img src="img/logobrand.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              ><i
+                class="fa-solid fa-bars"
+                style="color: rgb(88, 75, 75); font-size: 23px"
+              ></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Club buzz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Membership</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Wine and Dine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Facilities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Banquet</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Whats New</a>
+              </li>
+            </ul>
+            <a class="search-icon" href=""
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Section Slider image -->
+    <section class="container-slider">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/home-1.png" class="w-100" alt="..." />
+            <div class="carousel-caption">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/home-2.png" class="w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <video controls autoplay loop muted>
+              <source
+                src="video/stock-footage-brunette-woman-swimming-underwater-in-slow-motion.mp4"
+                type="video/webm"
+                class="w-100"
+              />
+            </video>
+          </div>
+          <div class="carousel-item">
+            <video controls autoplay loop muted>
+              <source
+                src="video/stock-footage-two-asian-boys-racing-with-their-father-in-a-pool.mp4"
+                type="video/webm"
+                class="w-100"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div>
+              <ul class="nav nav-pills mb-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#all" data-bs-toggle="pill"
+                    >Al1Product</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#lastest" data-bs-toggle="pill"
+                    >Lastest</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#papular" data-bs-toggle="pill"
+                    >Papular</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div id="all" class="active tab-pane fade in show">
+                  <h1>Aproducts</h1>
+                </div>
+                <div id="lastest" class="tab-pane fade">
+                  <h1>products</h1>
+                </div>
+                <div id="lastest" class="tab-pane fade">
+                  <h1>products</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

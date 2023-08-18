@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.container-nav{
+    display:flex;
+
+}
+
+html ::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+    background-color: #b2744c;
+    border-radius: 10px;
+}
+
+/* NAVBAR */
+#navbar {
+    display:flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f5c732;
+    transition: scroll 0.3s ease-in-out;
+    z-index: 9999;
+}
+#logo img{
+    display: flex;
+    height: 90px;
+    margin-left: 15rem;
+}
+.navbar-nav{
+    margin-left: 85px
+}
+.nav-item .nav-link{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.search-icon i{
+    margin-right: 100px;
+    color: white;
+    font-size: 30px;
+}
+
+/* IMG dropdown menu*/
+.container-imgdropdown {
+    flex-direction: column;
+    position: fixed;
+    margin-left: 70rem;
+    z-index: 9999;
+}
+
+.imgdropdown-item {
+    background-color: #f5c732;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgdropdown-item h1{
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.dropdown-icon{
+    border: 0;
+    display: flex;
+    margin-top: -10px;
+    position: relative;
+    margin-left: 5.4rem;
+}
+.dropdown-icon i {
+    display: flex;
+    background-color: #f5c732;
+    font-size: 35px;
+}
+
+
+
+/* Carousel section */
+.carousel-item {
+    height: 100vh;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel-item video{
+    width: 100%;
+}
+
+.carousel-indicators button.active {
+    background-color: #f5c732;
+    opacity: 1;
+}
+
+/* Main menu */
+.main-menu{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 100px;
+    height: 100vh;
+}
+
+  
+
+  
+
