@@ -103,10 +103,36 @@ html ::-webkit-scrollbar-thumb{
 
 /* Main menu */
 .main-menu{
-    display: flex;
     margin-top: 20px;
     margin-left: 100px;
-    height: 100vh;
+    height: 130vh;
+}
+.tab-content{
+    margin-top: 40px;
+}
+.card-body h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Menu event */
+.menu-event{
+    height: 110vh;
+}
+.menu-event h1{
+    margin-left: 10rem;
+}
+.container-event{
+    width: 5px;
+    height: 400px;
+    background-color: black;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+.event-text h4{
+    display: flex;
+    position: relative;
+    font-size: 10px;
 }
 
   
