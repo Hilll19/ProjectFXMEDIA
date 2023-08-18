@@ -21,16 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     prevScrollpos = currentScrollpos;
   };
-  const imgDropdownButton = document.querySelector(".imgdropdown-item");
-  const dropdownContent = document.getElementById("dropdownContent");
-
-  imgDropdownButton.addEventListener("click", function () {
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
+  
 
   const carousel = document.getElementById("carouselExampleCaptions");
   let activeSlideIndex = 0;
