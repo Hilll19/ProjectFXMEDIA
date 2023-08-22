@@ -289,6 +289,52 @@ html ::-webkit-scrollbar-thumb {
   color: #696060;
 }
 
+.container-email .contact-email {
+  padding-top: 10px;
+  padding-left: 140px;
+}
+.container-email .contact-email h3 {
+  color: #000;
+}
+.container-email .contact-email p {
+  color: #000;
+}
+label {
+  position: relative;
+  left: 140px;
+}
+input[type="text"] {
+  width: 460px;
+  height: 64px;
+  padding: 0 24px;
+}
+.btn-mail {
+  margin-top: 70px;
+  left: 140px;
+  position: absolute;
+  background-color: blue;
+  color: rgb(0, 0, 0);
+  padding: 10px 192px 19px 192px;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+button:hover {
+  transition: 0.8s;
+  background-color: #817253;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  padding-top: 5px;
+  color: white;
+}
+
 /* MEDIA QUERY */
 @media (max-width: 768px) {
   /* Navbar */
@@ -452,7 +498,7 @@ html ::-webkit-scrollbar-thumb {
 
   .contact-contact ul li {
     text-align: center;
-    flex-basis: calc(33.33% - 2px); /* Distribute items into three columns */
+    flex-basis: calc(33.33% - 2px);
     margin: 0;
   }
   .contact-contact h3 {
@@ -463,5 +509,41 @@ html ::-webkit-scrollbar-thumb {
     justify-content: space-around;
     align-items: center;
     font-size: 9px;
+  }
+  .container-email .contact-email {
+    padding-top: 10px;
+    padding-left: 50px;
+  }
+  .container-email .contact-email h3 {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  .container-email .contact-email p {
+    color: #000;
+  }
+  label {
+    position: relative;
+    left: 10px;
+  }
+  input[type="text"] {
+    width: 200px;
+    height: 35px;
+    padding: 0 24px;
+  }
+  .btn-mail {
+    margin-top: 1px;
+    left: 218px;
+    position: absolute;
+    background-color: blue;
+    color: rgb(0, 0, 0);
+    padding: 5px 19px 5px 19px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  /* FOOTER */
+  .footer{
+    text-align: center;
   }
 }
