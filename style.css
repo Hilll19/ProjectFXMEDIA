@@ -107,10 +107,24 @@ html ::-webkit-scrollbar-thumb {
 .carousel-item video {
   width: 100%;
 }
-
 .carousel-indicators button.active {
-  background-color: #f5c732;
+  background-color: #000000;
   opacity: 1;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  width: 370px;
+  position: absolute;
+  margin-left: 30px;
+  margin-bottom: 10rem;
+}
+.carousel-caption p {
+  padding-top: 10px;
+  position: absolute;
+  margin-left: 45px;
+  margin-bottom: 10rem;
+  font-size: 18px;
 }
 
 /* Main menu */
@@ -160,14 +174,14 @@ html ::-webkit-scrollbar-thumb {
 
 /* Event text */
 .event-text h4 {
-  display: inline-block; 
-  width: 200px; 
+  display: inline-block;
+  width: 200px;
   position: relative;
   margin-left: 20px;
   font-size: 13px;
 }
 .event-text h2 {
-  display: inline-block; 
+  display: inline-block;
   width: 400px;
   position: relative;
   margin-left: 20px;
@@ -175,7 +189,7 @@ html ::-webkit-scrollbar-thumb {
   font-size: 16px;
 }
 .event-text p {
-  display: inline-block; 
+  display: inline-block;
   width: 400px;
   position: relative;
   margin-left: 20px;
@@ -232,7 +246,7 @@ html ::-webkit-scrollbar-thumb {
 
 .contact-artcile {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
 
 .contact-content {
@@ -253,7 +267,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .contact-contact ul li {
-  list-style-type: none ;
+  list-style-type: none;
   margin-bottom: 5px;
 }
 .contact-contact h3 {
@@ -262,22 +276,21 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .contact-contact a {
-  display: inline-block; 
+  display: inline-block;
   position: relative;
   width: 130px;
   font-size: 14px;
-  padding: 3px 0; 
-  color: #000000; 
+  padding: 3px 0;
+  color: #000000;
   text-decoration: none;
 }
 
 .contact-contact a:hover {
-  color: #696060; 
+  color: #696060;
 }
 
 /* MEDIA QUERY */
-/* Media query untuk perangkat dengan lebar layar hingga 767px */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Navbar */
   #navbar {
     justify-content: space-between;
@@ -320,6 +333,35 @@ html ::-webkit-scrollbar-thumb {
   }
 
   /* Section Slider Image */
+  .container-slider{
+    height: 40vh;
+  }
+  .carousel-item{
+    height: 65vh;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .carousel-item video {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    width: 280px;
+  }
+  .carousel-caption h3 {
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .carousel-caption p {
+    font-size: 12px;
+  }
   .carousel-inner {
     height: 300px;
   }
@@ -351,13 +393,13 @@ html ::-webkit-scrollbar-thumb {
     margin-top: 45rem;
     height: 200vh;
   }
-  
+
   .event-text h4,
   .event-text h2,
   .event-text p {
     display: inline-block;
     position: relative;
-    width: 200px;
+    width: 180px;
     margin-left: 10px;
   }
   .container-event {
@@ -380,7 +422,7 @@ html ::-webkit-scrollbar-thumb {
     display: block;
   }
   .contact-container {
-    padding: 30px 15px;
+    padding: 10px 10px;
   }
   .contact-container iframe {
     width: 100%;
@@ -388,6 +430,7 @@ html ::-webkit-scrollbar-thumb {
     margin-left: 0;
   }
   .contact-image img {
+    padding-right: 11px;
     max-width: 200px;
     height: auto;
     margin-left: 0;
@@ -396,13 +439,29 @@ html ::-webkit-scrollbar-thumb {
     padding-top: 15px;
   }
   .contact-contact {
-    padding: 0;
-    justify-content: flex-start;
+    padding: 1px;
+    margin-top: 10px;
   }
+  .contact-contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
   .contact-contact ul li {
-    margin-bottom: 8px;
+    text-align: center;
+    flex-basis: calc(33.33% - 2px); /* Distribute items into three columns */
+    margin: 0;
   }
   .contact-contact h3 {
-    padding-bottom: 10px;
+    padding-bottom: 2px;
+  }
+  .contact-contact a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 9px;
   }
 }
