@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     prevScrollpos = currentScrollpos;
   };
-  
 
   const carousel = document.getElementById("carouselExampleCaptions");
   let activeSlideIndex = 0;
@@ -56,4 +55,25 @@ document.addEventListener("DOMContentLoaded", function () {
   // setInterval(() => {
   //   changeSlide(activeSlideIndex + 1); // No need to handle wrapping here
   // }, 6000); // Change the interval to 6000 milliseconds (6 seconds)
+
+  const readMoreButtons = document.querySelectorAll(".read-more-btn");
+
+  readMoreButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const containerEvent = this.parentElement;
+      const eventText = containerEvent.querySelector(".event-text");
+
+      const hiddenContent = document.getElementById("hiddenContent1"); // Ganti dengan ID yang sesuai
+      
+      eventText.classList.toggle("hiddenContent1");
+
+      if (eventText.classList.contains("hiddenContent1")) {
+        this.textContent = "Read Less -";
+        hiddenContent.style.display = "block"; // Tampilkan konten tersembunyi
+      } else {
+        this.textContent = "Read More +";
+        hiddenContent.style.display = "none"; // Sembunyikan konten tersembunyi
+      }
+    });
+  });
 });
