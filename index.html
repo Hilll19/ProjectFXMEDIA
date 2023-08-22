@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Singapore Swimming Club</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Boostrap CSS -->
     <link
@@ -30,11 +30,49 @@
       <button class="imgdropdown-item">
         <img src="img/logobrand.png" alt="" /> <br />
         <h1>MENU</h1>
+    
         <br />
       </button>
-      <button class="dropdown-icon">
+      <button class="dropdown-icon" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
         <i class="fa-solid fa-circle-chevron-down"></i>
       </button>
+      <!-- <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          Toggle width collapse
+        </button>
+      </p> -->
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-vertical" id="collapseWidthExample">
+          <div class="card-collapse card-body" style="width: 205px; height:400px">
+            <ul class="navbar-nav me-auto mr-3 mb-2">
+              <li class="collapse-item">
+                <a class="collapse-link" aria-current="page" href="#">About us</a>
+              </li>
+              <li class="collapse-item">
+                <a class="collapse-link" href="#">Club buzz</a>
+              </li>
+              <li class="collapse-item">
+                <a class="collapse-link" href="#">Membership</a>
+              </li>
+              <li class="collapse-item">
+                <a class="collapse-link" href="#">Wine and Dine</a>
+              </li>
+              <li class="collapse-item">
+                <a class="collapse-link" href="#">Facilities</a>
+              </li>
+              <li class="collapse-item">
+                <a class="collapse-link" href="#">Banquet</a>
+              </li>
+              <li class="collapse-item">
+                <a class="collapse-link" href="#">Gallery</a>
+              </li>
+              <li class="collapse-item">
+                <a class="collapse-link" href="#">Whats New</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Navbar -->
     <section class="container-nav">
@@ -139,7 +177,7 @@
             <img src="img/home-2.png" class="w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <video controls autoplay loop muted>
+            <!-- <video controls autoplay loop muted>
               <source
                 src="video/stock-footage-brunette-woman-swimming-underwater-in-slow-motion.mp4"
                 type="video/webm"
@@ -154,7 +192,7 @@
                 type="video/webm"
                 class="w-100"
               />
-            </video>
+            </video> -->
           </div>
         </div>
       </div>
@@ -165,7 +203,7 @@
         <div class="row">
           <div class="col-12">
             <div>
-              <ul class="nav nav-pills mb-3">
+              <ul class="nav nav-pills">
                 <li class="nav-item">
                   <a class="nav-link active" href="#featured" data-bs-toggle="pill"
                     >Featured</a
@@ -184,9 +222,9 @@
               </ul>
               <div class="tab-content">
                 <div id="featured" class="active tab-pane fade in show">
-                  <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                  <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-2">
                     <div class="col">
-                      <div class="card" style="width: 20rem;">
+                      <div class="card">
                         <img src="img/assetMenu/Asset1.png" class="card-img-top" style="height: 27vh" alt="...">
                         <div class="card-body">
                           <h1>SALE OF ORDINARY MEMBERSHIP AT THE CLUB </h1>
@@ -196,7 +234,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card" style="width: 20rem;">
+                      <div class="card">
                         <img src="img/assetMenu/Asset2.png" class="card-img-top" style="height: 27vh" alt="...">
                         <div class="card-body">
                           <h1>SOCIAL DANCE NIGHT BLACK & WHITE NIGHT</h1>
@@ -206,7 +244,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card" style="width: 20rem;">
+                      <div class="card">
                         <img src="img/assetMenu/Asset3.png" class="card-img-top" style="height: 27vh" alt="...">
                         <div class="card-body">
                           <h1>21ST SSC OPEN INVITATIONAL MIDGET MEET 2015</h1>
@@ -216,7 +254,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card" style="width: 20rem;">
+                      <div class="card">
                         <img src="img/assetMenu/Asset4.png" class="card-img-top" style="height: 27vh" alt="...">
                         <div class="card-body">
                           <h1>ANNUAL 9-BALL POOL COMPETITION</h1>
@@ -226,7 +264,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card" style="width: 20rem;">
+                      <div class="card">
                         <img src="img/assetMenu/Asset5.png" class="card-img-top" style="height: 27vh" alt="...">
                         <div class="card-body">
                           <h1>22ND TABLE TENNIS OPEN CHAMPIONSHIP</h1>
@@ -236,7 +274,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="card" style="width: 20rem;">
+                      <div class="card">
                         <img src="img/assetMenu/Asset6.png" class="card-img-top" style="height: 27vh" alt="...">
                         <div class="card-body">
                           <h1>WEEKEND BAZAAR EVERY SATURDAY</h1>
@@ -248,7 +286,68 @@
                   </div>
                 </div>
                 <div id="event" class="tab-pane fade">
-                  <h1>products</h1>
+                  <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+                    <div class="col">
+                      <div class="card">
+                        <img src="img/assetMenu/Asset2.png" class="card-img-top" style="height: 27vh" alt="...">
+                        <div class="card-body">
+                          <h1>SOCIAL DANCE NIGHT BLACK & WHITE NIGHT</h1>
+                          <hr style="border-top: 4px solid yellow;">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="img/assetMenu/Asset1.png" class="card-img-top" style="height: 27vh" alt="...">
+                        <div class="card-body">
+                          <h1>SALE OF ORDINARY MEMBERSHIP AT THE CLUB </h1>
+                          <hr style="border-top: 4px solid yellow;">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="img/assetMenu/Asset4.png" class="card-img-top" style="height: 27vh" alt="...">
+                        <div class="card-body">
+                          <h1>ANNUAL 9-BALL POOL COMPETITION</h1>
+                          <hr style="border-top: 4px solid yellow;">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="img/assetMenu/Asset3.png" class="card-img-top" style="height: 27vh" alt="...">
+                        <div class="card-body">
+                          <h1>21ST SSC OPEN INVITATIONAL MIDGET MEET 2015</h1>
+                          <hr style="border-top: 4px solid yellow;">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="img/assetMenu/Asset6.png" class="card-img-top" style="height: 27vh" alt="...">
+                        <div class="card-body">
+                          <h1>WEEKEND BAZAAR EVERY SATURDAY</h1>
+                          <hr style="border-top: 4px solid yellow;">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="img/assetMenu/Asset5.png" class="card-img-top" style="height: 27vh" alt="...">
+                        <div class="card-body">
+                          <h1>22ND TABLE TENNIS OPEN CHAMPIONSHIP</h1>
+                          <hr style="border-top: 4px solid yellow;">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div id="collaboration" class="tab-pane fade">
                   <h1>products</h1>
@@ -263,20 +362,185 @@
     <!-- MENU EVENT -->
     <section class="menu-event">
       <h1>NEWS</h1>
-      <div class="container text-center">
+      <div class="container-main-event">
         <div class="row">
           <div class="col">
             <div class="container-event">
               <div class="event-text">
                 <h4>15 SEPTEMBER 2015</h4>
+                <h2>THE PALMS OPEN FOR BREAKSFAST</h2>
+                <p>Please be informated that due to the haze, breakfast will be served at The Palms from 8.00am to 10.45am.Members are  to observe the dress code required at The Palms</p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="container-event"></div>
+            <div class="container-event">
+              <div class="event-text">
+                <h4>15 SEPTEMBER 2015</h4>
+                <h2>THE PALMS OPEN FOR BREAKSFAST</h2>
+                <p>Please be informated that due to the haze, breakfast will be served at The Palms from 8.00am to 10.45am.Members are  to observe the dress code required at The Palms</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="container-main-event">
+        <div class="row">
+          <div class="col">
+            <div class="container-event">
+              <div class="event-text">
+                <h4>15 SEPTEMBER 2015</h4>
+                <h2>THE PALMS OPEN FOR BREAKSFAST</h2>
+                <p>Please be informated that due to the haze, breakfast will be served at The Palms from 8.00am to 10.45am.Members are  to observe the dress code required at The Palms</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container-event">
+              <div class="event-text">
+                <h4>15 SEPTEMBER 2015</h4>
+                <h2>THE PALMS OPEN FOR BREAKSFAST</h2>
+                <p>Please be informated that due to the haze, breakfast will be served at The Palms from 8.00am to 10.45am.Members are  to observe the dress code required at The Palms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden" id="hiddenContent1">
+        <div class="row">
+          <div class="col">
+            <div class="container-event">
+              <div class="event-text">
+                <h4>15 SEPTEMBER 2015</h4>
+                <h2>THE PALMS OPEN FOR BREAKSFAST</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container-event">
+              <div class="event-text">
+                <h4>15 SEPTEMBER 2015]]]]]0000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="read-more-btn">Read More + </button>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <main class="contact-container">
+        <div class="contact-content">
+          <div class="contact-image">
+            <img src="./img/logobrand.png" alt="">
+          </div>
+          <div class="contact-text">
+            <p>45 Tanjong Rhu Road <br>
+              Singapore 436899 <br>
+               <br>
+              Tel: (65) 6342 3600 <br>
+              Fax: (65) 6344 4476</p>
+          </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.132335516082!2d103.8746391!3d1.3052396!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da18494555554b%3A0x19aa586d5ef8b666!2sSingapore%20Sports%20Hub!5e0!3m2!1sen!2sid!4v1692599735727!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      </main>
+      <article class="contact-artcile">
+        <div class="contact-artcile-container">
+          <div class="contact-contact">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Brief History</a>
+              </li>
+              <li>
+                <a href="#">Club Milestones</a>
+              </li>
+              <li>
+                <a href="#">Swimming Milestones</a>
+              </li>
+              <li>
+                <a href="#">Management Committee <br>Club Management</a>
+              </li>
+              <li>
+                <a href="#">Club Directory</a>
+              </li>
+              <li>
+                <a href="#">Club Buzz</a>
+              </li>
+              <li>
+                <a href="#">Facilities <br>Sport <br>General</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-artcile-container">
+          <div class="contact-contact">
+            <ul>
+              <li>
+                <a href="#">Membership</a>
+              </li>
+              <li>
+                <a href="#">Membership Schemes</a>
+              </li>
+              <li>
+                <a href="#">Reciprocal Schemes</a>
+              </li>
+              <li>
+                <a href="#">Golfing Membership</a>
+              </li>
+              <li>
+                <a href="#">Transfer Procdures & FAQ</a>
+              </li>
+              <li>
+                <a href="#">Find Out More</a>
+              </li>
+              <li>
+                <a href="#">Banquet</a>
+              </li>
+              <li>
+                <a href="#">Photo Gallery</a>
+              </li>
+              <li>
+                <a href="#">Sport <br>Swimming <br>Social</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-artcile-container">
+          <div class="contact-contact">
+            <ul>
+              <li>
+                <a href="#">Wine & Dine</a>
+              </li>
+              <li>
+                <a href="#">Jakson Miller</a>
+              </li>
+              <li>
+                <a href="#">The Palms Jade Phoenix Cabana</a>
+              </li>
+              <li>
+                <a href="#">Le Petit Tressor <br>The Delicatesen <br>Fountain Bar</a>
+              </li>
+              <li>
+                <a href="#">D'Tanjong</a>
+              </li>
+              <li>
+                <a href="#">D'Sports</a>
+              </li>
+              <li>
+                <a href="#">D'Galaxy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
     </section>
 
     <!-- Boostrap JS -->
