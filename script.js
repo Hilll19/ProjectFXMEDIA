@@ -23,38 +23,50 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const carousel = document.getElementById("carouselExampleCaptions");
-  let activeSlideIndex = 0;
+  const slideInterval = 5000; // Slide interval in milliseconds
+  let slideIntervalId;
 
-  // Function to change the active slide
-  function changeSlide(index) {
-    const indicators = document.querySelectorAll(".carousel-indicators button");
-    indicators[activeSlideIndex].classList.remove("active");
-    carousel.querySelector(".carousel-item.active").classList.remove("active");
-
-    activeSlideIndex = index;
-
-    if (activeSlideIndex === slideImages.length - 3) {
-      // Reset to the first slide after reaching the last slide
-      activeSlideIndex = 0;
-    }
-
-    indicators[activeSlideIndex].classList.add("active");
-    carousel
-      .querySelectorAll(".carousel-item")
-      [activeSlideIndex].classList.add("active");
+  function startSlideInterval() {
+    slideIntervalId = setInterval(autoSlide, slideInterval);
   }
 
-  const slideImages = document.querySelectorAll(".carousel-item img");
-  slideImages.forEach((image, index) => {
-    image.addEventListener("click", () => {
-      changeSlide(index === slideImages.length - 3 ? 0 : index + 1);
-    });
+  function stopSlideInterval() {
+    clearInterval(slideIntervalId);
+  }
+
+  function autoSlide() {
+    const indicators = document.querySelectorAll(".carousel-indicators button");
+    const activeSlide = carousel.querySelector(".carousel-item.active");
+    const activeIndex = Array.from(carousel.querySelectorAll(".carousel-item")).indexOf(activeSlide);
+
+    // Remove active class from the current slide
+    activeSlide.classList.remove("active");
+    indicators[activeIndex].classList.remove("active");
+
+    let nextIndex = activeIndex + 1;
+
+    if (nextIndex >= indicators.length) {
+      // Reset to the first slide after reaching the last slide
+      nextIndex = 0;
+    }
+
+    // Add active class to the next slide
+    carousel.querySelectorAll(".carousel-item")[nextIndex].classList.add("active");
+    indicators[nextIndex].classList.add("active");
+  }
+
+  startSlideInterval();
+
+  // Pause the interval when the user interacts with the carousel
+  carousel.addEventListener("mouseenter", () => {
+    stopSlideInterval();
   });
 
-  // // Automatic slide transition every 6 seconds
-  // setInterval(() => {
-  //   changeSlide(activeSlideIndex + 1); // No need to handle wrapping here
-  // }, 6000); // Change the interval to 6000 milliseconds (6 seconds)
+  // Resume the interval when the user stops interacting with the carousel
+  carousel.addEventListener("mouseleave", () => {
+    startSlideInterval();
+  });
+  
 
   const readMoreButtons = document.querySelectorAll(".read-more-btn");
 
