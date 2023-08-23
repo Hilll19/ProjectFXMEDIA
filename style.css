@@ -507,7 +507,7 @@ button:hover {
   .event-text p {
     display: inline-block;
     position: relative;
-    width: 200px;
+    width: 180px;
     margin-left: 10px;
   }
   .container-event {
