@@ -448,7 +448,7 @@ button:hover {
   }
   .carousel-item img {
     width: 100%;
-    height: 50%;
+    height: 45%;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -475,6 +475,7 @@ button:hover {
 
   /* Main Menu */
   .main-menu {
+    height: 130vh;
     margin-left: 0;
     padding: 0 15px;
   }
@@ -497,8 +498,8 @@ button:hover {
 
   /* Menu Event */
   .menu-event {
-    margin-top: 45rem;
-    height: 200vh;
+    margin-top: 49rem;
+    height: 300vh;
   }
 
   .event-text h4,
@@ -506,14 +507,16 @@ button:hover {
   .event-text p {
     display: inline-block;
     position: relative;
-    width: 180px;
+    width: 200px;
     margin-left: 10px;
   }
   .container-event {
     width: 4px;
+    height: 270px;
   }
   .container-event2 {
     width: 4px;
+    height: 250px;
   }
   .read-more-btn {
     position: absolute;
